@@ -16,11 +16,7 @@ jobs:
     runs-on: ubuntu:latest
     strategy:
       matrix:
-        some: |
-          a
-          b
-          c
-          d
+        some: [a, b, c, d]
     steps:
       - name: echo the matrix value
         run: echo ${{ matrix.some }}
